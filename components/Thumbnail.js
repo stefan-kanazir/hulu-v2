@@ -1,13 +1,16 @@
 import Image from 'next/image';
 
-function Thumbnail( result ) {
+function Thumbnail({ result }) {
+    const BASE_URL = "https://image.tmdb.org/t/p/original";
+
     return (
         <div>
+            <h1>Thumbnail</h1>
             <Image 
-                layout = 'resposnive'
+                layout = 'responsive'
                 src= {
-                    `${BASE_URL}${result.backdrop_path || result.poster_path}` || 
-                    `${BASE_URL}${result.backdrop_path}`
+                    `${BASE_URL}${result.backdrop_path || results.poster_path}` ||
+                    `${BASE_URL}${results.poster_path}`
                 } 
                 height = {1080}
                 width = {1920}
