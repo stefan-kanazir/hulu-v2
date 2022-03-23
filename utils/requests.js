@@ -1,4 +1,5 @@
-/* eslint-disable import/no-anonymous-default-export */
+// tmdb api
+
 const API_KEY = '232a6547263f24bff7bfac7e8a28de6a';
 
 export default {
@@ -21,10 +22,6 @@ export default {
     fetchHorrorMovies: {
         title: 'Horror',
         url: `/discover/movie?api_key=${API_KEY}&with_genres=27`
-    },
-    fetchRomanceMovies: {
-        title: 'Romance',
-        url: `/discover/movie?api_key=${API_KEY}&with_genres=10749`
     },
     fetchMisteryMovies: {
         title: 'Mistery',
